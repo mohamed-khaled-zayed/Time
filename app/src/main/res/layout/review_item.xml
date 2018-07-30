@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/review_item_border"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:paddingStart="45dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+          <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <com.binarycase.mohamed.ontime.utils.CustomTextView
+                  foo:customFont="GE_SS_Two_Medium.otf"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="رضوى رفعت"
+                  android:layout_marginTop="5dp"
+                  android:textColor="@color/text_red_color"
+                  android:textSize="10sp"
+                  android:id="@+id/customer_name"
+                  />
+
+              <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                  android:layout_width="80dp"
+                  android:layout_height="20dp"
+                  app:srb_starSize="8dp"
+                  app:srb_numberOfStars="5"
+                  app:srb_rating="3"
+                  android:layout_alignParentEnd="true"
+                  app:srb_stepSize="0.5"
+                  android:background="@color/text_red_color"
+                  />
+          </RelativeLayout>
+
+            <com.binarycase.mohamed.ontime.utils.CustomTextView
+                foo:customFont="GE_SS_Two_Light.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/text_color"
+                android:id="@+id/customer_review"
+                android:text="رضوى رفعت هنالك العديد من الانواع المتوفرة للنصوص لوريم ايبسوس و لكن الغالبية تم تعديلها"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/review_mark"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerCrop"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/video_unselected"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--xmlns:foo="http://schemas.android.com/apk/res-auto"-->
+<!--android:layout_margin="10dp"-->
+<!--android:layout_height="wrap_content">-->
+
+<!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:background="@drawable/sign_in_border"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginStart="45dp"-->
+    <!--android:paddingStart="45dp"-->
+    <!--&gt;-->
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+        <!--<com.binarycase.mohamed.ontime.utils.CustomTextView-->
+            <!--foo:customFont="GE_SS_Two_Medium.otf"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="رضوى رفعت"-->
+            <!--android:textColor="@color/text_red_color"-->
+            <!--android:textSize="10sp"-->
+            <!--/>-->
+
+        <!--<com.binarycase.mohamed.ontime.utils.CustomTextView-->
+            <!--foo:customFont="GE_SS_Two_Light.otf"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="10sp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:textColor="@color/text_color"-->
+            <!--android:text="رضوى رفعت هنالك العديد من الانواع المتوفرة للنصوص لوريم ايبسوس و لكن الغالبية تم تعديلها"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+<!--</LinearLayout>-->
+
+<!--<ImageView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:src="@drawable/video_unselected"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--/>-->
+
+
+<!--</RelativeLayout>-->

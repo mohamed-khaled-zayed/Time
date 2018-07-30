@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/order_option_bg"
+    tools:context=".ui.fragment.OrderDetailFragment"
+    android:layout_marginBottom="180dp"
+    >
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/close"
+        android:id="@+id/close_dialog"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الكوبونات"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        android:id="@+id/coupon"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اصدار فاتورة"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/bill"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="استلام المشروع"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/receive_project"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="التقييم"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/rate"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مراسلة الادارة"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:id="@+id/chat_with_admin"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</LinearLayout>

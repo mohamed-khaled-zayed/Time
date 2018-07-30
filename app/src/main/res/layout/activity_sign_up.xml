@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.commen.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/signin_bg"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حساب جديد"
+            android:layout_gravity="center"
+            android:layout_marginTop="320dp"
+            android:textColor="@color/text_red_color"
+            android:textSize="18sp"
+            android:id="@+id/sign_up_new_account"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="فضلا املا الحقول المطلوبة"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/text_red_color"
+            android:id="@+id/sign_up_please"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/check_box_bg_image"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="افراد"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:layout_marginStart="10dp"
+                android:id="@+id/sign_up_persons"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_in_border"
+                android:padding="5dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:hint="الاسم الاول"
+                android:textColor="@color/text_color"
+                android:layout_marginEnd="5dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:id="@+id/sign_up_first"
+                android:paddingEnd="10dp"
+                android:textColorHint="@color/text_color"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_in_border"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:hint="الاسم الثانى"
+                android:layout_marginEnd="5dp"
+                android:lines="1"
+                android:id="@+id/sign_up_second"
+                android:paddingEnd="10dp"
+                android:textColorHint="@color/text_color"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_in_border"
+                android:padding="5dp"
+                android:layout_weight="3"
+                android:textColor="@color/text_color"
+                android:layout_gravity="center"
+                android:hint="الاسم الثالث"
+                android:lines="1"
+                android:id="@+id/sign_up_third"
+                android:paddingEnd="10dp"
+                android:textColorHint="@color/text_color"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="14dp"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:onClick="checkBoxListener"
+                android:id="@+id/check_box_bg"
+                android:layout_marginStart="-5dp"
+                android:src="@drawable/uncheck_box_bg_image"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="مؤسسات"
+                android:textColor="@color/text_color"
+                android:layout_weight="2.3"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/sign_up_company"
+
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_in_border"
+                android:padding="6dp"
+                android:textColor="@color/text_color"
+                android:layout_weight="7"
+                android:layout_gravity="center"
+                android:textAlignment="viewStart"
+                android:hint="اسم المؤسسة"
+                android:id="@+id/sign_up_company_name"
+                android:textSize="15sp"
+                android:textColorHint="@color/text_color"                />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_border"
+            android:drawableEnd="@drawable/by_phone"
+            android:padding="6dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/text_color"
+            android:textAlignment="viewStart"
+            android:hint="رقم الجوال"
+            android:layout_marginTop="14dp"
+            android:id="@+id/sign_up_phone_number"
+            android:paddingEnd="10dp"
+            android:textColorHint="@color/text_color"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_border"
+            android:drawableEnd="@drawable/by_mail"
+            android:padding="6dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/text_color"
+            android:textAlignment="viewStart"
+            android:hint="البريد الالكترونى"
+            android:layout_marginTop="14dp"
+            android:id="@+id/sign_up_email"
+            android:paddingEnd="10dp"
+            android:textColorHint="@color/text_color"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_border"
+            android:drawableEnd="@drawable/pass_img"
+            android:padding="6dp"
+            android:drawablePadding="5dp"
+            android:paddingEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/text_color"
+            android:textAlignment="viewStart"
+            android:hint="كلمة السر"
+            android:layout_marginTop="14dp"
+            android:id="@+id/sign_up_password"
+            android:textColorHint="@color/text_color"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="14dp"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:text="تسجيل"
+                android:layout_weight="1"
+                android:id="@+id/sign_up_sign_up"
+                android:background="@drawable/sign_in_btn"
+                android:textColor="#fff"
+                android:onClick="signUpButton"
+                android:layout_marginEnd="15sp"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:text="رجوع"
+                android:layout_weight="1"
+                android:background="@drawable/sign_up_return"
+                android:textColor="#fff"
+                android:onClick="cancel"
+                android:layout_marginStart="15sp"
+                android:id="@+id/sign_up_back"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/sign_in_bg"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لديك حساب بالفعل؟سجل الدخول"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:onClick="login"
+                android:textColor="@color/text_color"
+                android:id="@+id/sign_up_message"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

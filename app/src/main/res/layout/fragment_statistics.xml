@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.admin.StatisticsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_projects"
+            android:text="المشاريع"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/text_red_color"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/toolbar_img"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bill"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user_compeleted"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="10dp"
+                        />
+
+
+                    />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="5dp"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFF"
+                        android:gravity="center"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="قيد المراجعة"
+                            android:textColor="#98015B"
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:textSize="10sp"
+                            android:id="@+id/admin_revision"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="16"
+                            android:textAlignment="center"
+                            android:textSize="10sp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/admin_revision_numbers"
+                            />
+
+                        />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/toolbar_img"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bill"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user_loading"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="10dp"
+                        />
+
+
+                    />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="5dp"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFF"
+                        android:gravity="center"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="قيد التنفيذ"
+                            android:textColor="#98015B"
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:textSize="10sp"
+                            android:id="@+id/admin_execting"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:textAlignment="center"
+                            android:textSize="10sp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/admin_execting_numbers"
+                            />
+
+                        />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/toolbar_img"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bill"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user_loading"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="10dp"
+                        />
+
+
+                    />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="5dp"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFF"
+                        android:gravity="center"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="متاخرة"
+                            android:textColor="#98015B"
+                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:textSize="10sp"
+                            android:id="@+id/admin_late"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="30"
+                            android:textAlignment="center"
+                            android:textSize="10sp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/admin_late_numbers"
+                            />
+
+                        />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            android:layout_marginTop="40dp"
+            ></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الدعم الفنى"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    android:id="@+id/admin_support"
+                    android:textAlignment="center"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/toolbar_img"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bill"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user_compeleted"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="10dp"
+                        />
+
+
+                    />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="5dp"
+                    app:contentPadding="0dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#FFF"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="الاجمالى"
+                                android:layout_marginStart="10sp"
+                                android:layout_alignParentStart="true"
+                                android:textColor="#98015B"
+                                android:padding="10dp"
+                                android:textSize="10sp"
+                                android:id="@+id/admin_total_noti"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="19"
+                                android:layout_marginEnd="10sp"
+                                android:layout_alignParentEnd="true"
+                                android:textColor="@color/text_color"
+                                android:padding="10dp"
+                                android:textSize="10sp"
+                                android:id="@+id/admin_total_noti_numbers"
+                                />
+
+                            />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ccc"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            ></LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="اخر اشعار"
+                            android:layout_marginStart="10dp"
+                            android:textSize="8sp"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/last_notification"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-مشكلة فى اضافة الاعضاء من ..."
+                            android:id="@+id/first_notification"
+                            android:textSize="8sp"
+                            android:textColor="@color/text_color"
+                            android:layout_margin="10dp"
+                            />
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="المحادثات"
+                    android:id="@+id/chats"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/toolbar_img"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bill"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/user_loading"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="10dp"
+                        />
+
+
+                    />
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="5dp"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#FFF"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="الاجمالى"
+                                android:layout_marginStart="10sp"
+                                android:layout_alignParentStart="true"
+                                android:textColor="#98015B"
+                                android:padding="10dp"
+                                android:textSize="10sp"
+                                android:id="@+id/admin_total_chats"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8"
+                                android:layout_marginEnd="10sp"
+                                android:layout_alignParentEnd="true"
+                                android:textColor="@color/text_color"
+                                android:padding="10dp"
+                                android:textSize="10sp"
+                                android:id="@+id/admin_total_chats_numbers"
+                                />
+
+                            />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ccc"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            ></LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="اخر محادثة"
+                            android:layout_marginStart="10dp"
+                            android:textSize="8sp"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/last_chat"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Safaa Ahmed"
+                            android:id="@+id/user_chat"
+                            android:textSize="8sp"
+                            android:textColor="@color/text_color"
+                            android:layout_margin="10dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

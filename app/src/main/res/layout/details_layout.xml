@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/details_bg"
+    android:scrollbars="none"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/close"
+            android:id="@+id/close_dialog"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/note_dialog_bg"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/warning"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ملاحظة على الطلب نامل سداد المبلغ المتبقى "
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:id="@+id/note"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="طلب تصميم موشن جرافيك"
+            android:textColor="#B4E5FF"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:id="@+id/order_name"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="تاريخ انشاء الطلب:"
+                android:textSize="11sp"
+                android:layout_weight="1.2"
+                android:textColor="#FFF"
+                android:id="@+id/order_date"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="7-5-2018"
+                android:textSize="11sp"
+                android:textAlignment="viewStart"
+                android:gravity="start"
+                android:layout_weight=".8"
+                android:textColor="#FFF"
+                android:id="@+id/order_date_value"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="حالة الطلب:"
+                android:textSize="11sp"
+                android:layout_weight="1.1"
+                android:textColor="#FFF"
+                android:id="@+id/order_status"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="قيد التنفيذ"
+                android:textSize="11sp"
+                android:layout_weight=".9"
+                android:textColor="#B4E5FF"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart"
+                android:id="@+id/order_status_value"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="مدة تنفيذ الطلب:"
+                android:textSize="11sp"
+                android:layout_weight="1.4"
+                android:textColor="#FFF"
+                android:id="@+id/order_period"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="5 ايام"
+                android:textSize="11sp"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart"
+                android:layout_weight=".6"
+                android:textColor="#FFF"
+                android:id="@+id/order_period_value"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="الموظف:"
+                android:textSize="11sp"
+                android:layout_weight=".8"
+                android:textColor="#FFF"
+                android:layout_marginStart="10dp"
+                android:id="@+id/employee_name"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ramy Ahmed"
+                android:textSize="11sp"
+                android:layout_weight="1.2"
+                android:textColor="#FFF"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart"
+                android:id="@+id/employee_name_value"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="القسم:"
+                android:textSize="11sp"
+                android:layout_weight=".8"
+                android:textColor="#FFF"
+                android:id="@+id/department_name"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="موشن جرافيك"
+                android:textSize="11sp"
+                android:textAlignment="viewStart"
+                android:layout_weight="1.2"
+                android:textColor="#FFF"
+                android:id="@+id/department_name_value"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="تكلفة الطلب:"
+                android:textSize="11sp"
+                android:layout_weight="1.2"
+                android:textColor="#FFF"
+                android:id="@+id/order_price"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1000 ريال"
+                android:textSize="11sp"
+                android:layout_weight=".8"
+                android:textColor="#B4E5FF"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart"
+                android:id="@+id/order_price_value"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="رقم الطلب:"
+                android:textSize="11sp"
+                android:layout_weight="1.2"
+                android:textColor="#FFF"
+                android:id="@+id/order_number"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="177"
+                android:textSize="11sp"
+                android:textAlignment="viewStart"
+                android:layout_weight=".8"
+                android:textColor="#FFF"
+                android:id="@+id/order_number_value"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" المبلغ المتبقى:"
+                android:textSize="11sp"
+                android:layout_weight="1.2"
+                android:textColor="#FFF"
+                android:layout_marginStart="10dp"
+                android:id="@+id/remain_sum"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="200 ريال"
+                android:textSize="11sp"
+                android:layout_weight=".8"
+                android:textColor="#B4E5FF"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart"
+                android:id="@+id/remain_sum_value"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#fff"
+            android:layout_marginTop="20dp"
+            ></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الخدمات المطلوب تنفيذها"
+            android:textColor="#B4E5FF"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/services"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:id="@+id/services_name_circle"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="موشن جرافي لمدة دقيقة"
+                android:textColor="#FFF"
+                android:layout_marginStart="10dp"
+                android:id="@+id/services_name"
+                android:layout_gravity="center"
+                android:textSize="11sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:id="@+id/services_name2_circle"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تصميمات جرافيك سوشيال ميديا"
+                android:textColor="#FFF"
+                android:textSize="11sp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/services_name_2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#fff"
+            android:layout_marginTop="20dp"
+            ></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تفاصيل المشروع"
+            android:textColor="#B4E5FF"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:id="@+id/project_details"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="بدأ ميسي بلعب كرة القدم في سن مبكرة وسرعان ما تم اكتشاف قدراته على يد برشلونة. وغادر روساريو القائمة على فريق شباب نيولز أولد بويز في عام 2000 وانتقل مع عائلته إلى أوروبا، كما عرض برشلونة له العلاج لنقص هرمونات النمو. في أول ظهور له في موسم 2004–05، "
+            android:textColor="#FFF"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/project_details_value"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

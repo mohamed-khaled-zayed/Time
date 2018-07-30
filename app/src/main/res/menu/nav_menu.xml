@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title=""
+        android:id="@+id/close"
+        android:icon="@drawable/nav_close"/>
+
+    <item android:title="الرئيسية"
+        android:id="@+id/home"
+        android:icon="@drawable/home_page"/>
+
+
+        <item android:title="حسابى"
+            android:id="@+id/my_account"
+            android:icon="@drawable/my_account"/>
+
+    <item android:title="طلباتى"
+        android:id="@+id/my_orders"
+
+        android:icon="@drawable/my_orders"/>
+
+        <item android:title="الاقسام"
+            android:id="@+id/department"
+            android:icon="@drawable/departments"/>
+
+        <item android:title="الخدمات و الاسعار"
+            android:id="@+id/services"
+            android:icon="@drawable/price_and_services"/>
+
+        <item android:title="اعمالنا"
+            android:id="@+id/our_works"
+            android:icon="@drawable/our_works"/>
+
+    <item android:title="من نحن"
+        android:id="@+id/who_us"
+        android:icon="@drawable/who_us"/>
+
+        <item android:title="سياسة الاستخدام"
+        android:id="@+id/terms"
+        android:icon="@drawable/terms"/>
+
+        <item android:title="الحسابات البنكية"
+            android:id="@+id/bank"
+            android:icon="@drawable/bank_accounts"/>
+
+        <item android:title="اللغة"
+            android:id="@+id/language"
+            android:icon="@drawable/language"/>
+
+    <item android:title="اتصل بنا"
+        android:id="@+id/call_us"
+        android:icon="@drawable/call_us"/>
+
+    <item android:title="تسجيل خروج"
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"/>
+
+
+</menu>

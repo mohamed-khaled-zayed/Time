@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".ui.activity.client.NewOrderActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@drawable/toolbar_img"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/back_btn"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFF"
+                android:text="طلب جديد"
+                android:id="@+id/toolbar_title" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فضلا قم بتحديد نوع الطلب"
+                android:textColor="@color/text_red_color"
+                android:textAlignment="center"
+                android:id="@+id/new_order_please"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="للاستفسار عن خدمة غير موجودة اختر اخرى و سنقوم بالرد على استفسارك فى اقرب وقت"
+                android:textColor="@color/text_red_color"
+                android:textAlignment="center"
+                android:id="@+id/new_order_ask"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مجال الطلب"
+                android:id="@+id/new_order_field"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/text_color"
+                />
+
+            <LinearLayout
+                style="@style/EditText1Style"
+                android:layout_marginTop="10dp"
+                android:padding="3dp">
+                <Spinner
+                    android:id="@+id/field_type_spinner"
+                    style="@style/EditText1Style"
+
+                    android:background="@drawable/spinner_bg" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نوع الطلب"
+                android:textColor="@color/text_color"
+                android:id="@+id/new_order_type"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                style="@style/EditText1Style"
+                android:layout_marginTop="10dp"
+                android:padding="3dp">
+                <Spinner
+                    android:id="@+id/order_type_spinner"
+                    style="@style/EditText1Style"
+                    android:background="@drawable/spinner_bg" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اضافات الطلب"
+                android:textColor="@color/text_color"
+                android:id="@+id/new_order_extra"
+                android:layout_marginTop="40dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تعليق صوتى من دقيقة الى دقيقتين"
+                    android:id="@+id/new_order_voice_1_2"
+                    android:textColor="@color/text_color"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تعليق صوتى من دقيقتين الى 4"
+                    android:id="@+id/new_order_voice_2_4"
+                    android:textColor="@color/text_color"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تعليق صوتى من 4 الى 8"
+                    android:id="@+id/new_order_voice_4_8"
+                    android:textColor="@color/text_color"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="كتابة سيناريو للفيديو"
+                    android:id="@+id/new_order_write_story"
+                    android:textColor="@color/text_color"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="خدمة سريعة لانجاز العمل خلال مدة قصيرة"
+                    android:id="@+id/new_order_fast_service"
+                    android:textColor="@color/text_color"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="السعر"
+                android:layout_marginTop="10dp"
+                android:id="@+id/new_order_price"
+                android:textColor="@color/text_color"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_in_border"
+                android:drawableEnd="@drawable/price_icon"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:textAlignment="viewStart"
+                android:textColorHint="@color/text_color"
+                android:hint="00 $"
+                android:textColor="#687796"
+                android:paddingEnd="10dp"
+                android:textSize="15sp"
+                android:layout_marginTop="22dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="40dp"
+                >
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:text="متابعة"
+                    android:layout_weight="1"
+                    android:id="@+id/new_order_conutine"
+                    android:onClick="continueOrder"
+                    android:background="@drawable/sign_in_btn"
+                    android:textColor="#fff"
+                    android:layout_marginEnd="15sp"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:text="رجوع"
+                    android:layout_weight="1"
+                    android:background="@drawable/sign_up_return"
+                    android:textColor="#fff"
+                    android:onClick="back"
+                    android:id="@+id/new_order_cancel"
+                    android:layout_marginStart="15sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

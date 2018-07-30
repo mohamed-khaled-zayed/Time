@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
+    tools:context=".ui.activity.employee.EmployeeSupportFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center"
+                android:background="@drawable/sign_in_border"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    >
+
+                    <com.binarycase.mohamed.ontime.utils.CustomTextView
+                        foo:customFont="GE_SS_Two_Medium.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مشكلة فى لوحة تحكم موقعى"
+                        android:textSize="10sp"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/order_name"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/text_red_color"
+                        />
+
+                    <com.binarycase.mohamed.ontime.utils.CustomTextView
+                        foo:customFont="GE_SS_Two_Medium.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20-8-2018"
+                        android:textSize="10sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/order_name"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_color"
+                        android:id="@+id/order_date"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"
+                    ></LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/red_bill"
+                    />
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"
+                    ></LinearLayout>
+
+
+
+                <com.binarycase.mohamed.ontime.utils.CustomTextView
+                    foo:customFont="GE_SS_Two_Medium.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="شركة ارجاء"
+                    android:textSize="10sp"
+                    android:id="@+id/run"
+                    android:layout_weight="3"
+                    android:textColor="@color/text_color"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/sign_in_bg"
+                    android:padding="8dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center"
+                android:background="@drawable/sign_in_border"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    >
+
+                    <com.binarycase.mohamed.ontime.utils.CustomTextView
+                        foo:customFont="GE_SS_Two_Medium.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تعديلات على تصميمات المطبوعات"
+                        android:textSize="10sp"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/order_name2"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/text_red_color"
+                        />
+
+                    <com.binarycase.mohamed.ontime.utils.CustomTextView
+                        foo:customFont="GE_SS_Two_Medium.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20-8-2018"
+                        android:textSize="10sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/order_name2"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_color"
+                        android:id="@+id/order_date2"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"
+                    ></LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/red_bill"
+                    />
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"
+                    ></LinearLayout>
+
+
+
+                <com.binarycase.mohamed.ontime.utils.CustomTextView
+                    foo:customFont="GE_SS_Two_Medium.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="محمد رافت"
+                    android:textSize="10sp"
+                    android:id="@+id/run2"
+                    android:layout_weight="3"
+                    android:textColor="@color/text_color"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/sign_in_bg"
+                    android:padding="8dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center"
+                android:background="@drawable/sign_in_border"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    >
+
+                    <com.binarycase.mohamed.ontime.utils.CustomTextView
+                        foo:customFont="GE_SS_Two_Medium.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تعديل عبى استورى بورد فيديو موشن"
+                        android:textSize="10sp"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/order_name3"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/text_red_color"
+                        />
+
+                    <com.binarycase.mohamed.ontime.utils.CustomTextView
+                        foo:customFont="GE_SS_Two_Medium.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20-8-2018"
+                        android:textSize="10sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/order_name3"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_color"
+                        android:id="@+id/order_date3"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"
+                    ></LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/red_bill"
+                    />
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"
+                    ></LinearLayout>
+
+
+
+                <com.binarycase.mohamed.ontime.utils.CustomTextView
+                    foo:customFont="GE_SS_Two_Medium.otf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="شيماء رضوان"
+                    android:textSize="10sp"
+                    android:id="@+id/run3"
+                    android:layout_weight="3"
+                    android:textColor="@color/text_color"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/sign_in_bg"
+                    android:padding="8dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

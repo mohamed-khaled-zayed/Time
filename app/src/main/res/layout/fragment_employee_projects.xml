@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
+    tools:context=".ui.activity.employee.EmployeeProjectsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.activity.admin.ProjectDetailsActivity">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/graphic_design_unselected"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <com.binarycase.mohamed.ontime.utils.CustomTextView
+                    foo:customFont="GE_SS_Two_Medium.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مشاريع  قيد التنفيذ"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/order_title"
+                    />
+
+                <com.binarycase.mohamed.ontime.utils.CustomTextView
+                    foo:customFont="GE_SS_Two_Medium.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="عدد المشاريع: 2"
+                    android:textSize="10sp"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/orders_number"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:gravity="center"
+                    android:background="@drawable/sign_in_border"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        >
+
+                        <com.binarycase.mohamed.ontime.utils.CustomTextView
+                            foo:customFont="GE_SS_Two_Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="مشروع تصميم هوية تجارية كاملة"
+                            android:textSize="10sp"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/order_name"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/text_red_color"
+                            />
+
+                        <com.binarycase.mohamed.ontime.utils.CustomTextView
+                            foo:customFont="GE_SS_Two_Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20-8-2018"
+                            android:textSize="10sp"
+                            android:layout_marginStart="10dp"
+                            android:layout_below="@+id/order_name"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/order_date"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        ></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:src="@drawable/red_bill"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        ></LinearLayout>
+
+
+
+                    <com.binarycase.mohamed.ontime.utils.CustomTextView
+                        foo:customFont="GE_SS_Two_Medium.otf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="قيد التنفيذ"
+                        android:textSize="10sp"
+                        android:id="@+id/run"
+                        android:layout_weight="3"
+                        android:textColor="@color/text_color"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/sign_in_bg"
+                        android:padding="8dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:gravity="center"
+                    android:background="@drawable/sign_in_border"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        >
+
+                        <com.binarycase.mohamed.ontime.utils.CustomTextView
+                            foo:customFont="GE_SS_Two_Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="مشروع تصميم هوية تجارية كاملة"
+                            android:textSize="10sp"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/order_name2"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/text_red_color"
+                            />
+
+                        <com.binarycase.mohamed.ontime.utils.CustomTextView
+                            foo:customFont="GE_SS_Two_Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20-8-2018"
+                            android:textSize="10sp"
+                            android:layout_marginStart="10dp"
+                            android:layout_below="@+id/order_name2"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/order_date2"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        ></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:src="@drawable/red_bill"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        ></LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="قيد التنفيذ"
+                        android:textSize="12sp"
+                        android:id="@+id/run2"
+                        android:layout_weight="3"
+                        android:textColor="@color/text_color"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/sign_in_bg"
+                        android:padding="8dp"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/graphic_design_unselected"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <com.binarycase.mohamed.ontime.utils.CustomTextView
+                    foo:customFont="GE_SS_Two_Medium.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مشاريع  قيد التنفيذ"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ordedr_title"
+                    />
+
+                <com.binarycase.mohamed.ontime.utils.CustomTextView
+                    foo:customFont="GE_SS_Two_Medium.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="عدد المشاريع: 2"
+                    android:textSize="10sp"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/ordesrs_number"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:gravity="center"
+                    android:background="@drawable/sign_in_border"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        >
+
+                        <com.binarycase.mohamed.ontime.utils.CustomTextView
+                            foo:customFont="GE_SS_Two_Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="مشروع تصميم هوية تجارية كاملة"
+                            android:textSize="10sp"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/ordaer_name"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/text_red_color"
+                            />
+
+                        <com.binarycase.mohamed.ontime.utils.CustomTextView
+                            foo:customFont="GE_SS_Two_Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20-8-2018"
+                            android:textSize="10sp"
+                            android:layout_marginStart="10dp"
+                            android:layout_below="@+id/ordaer_name"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/orwder_date"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        ></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:src="@drawable/red_bill"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        ></LinearLayout>
+
+
+
+                    <com.binarycase.mohamed.ontime.utils.CustomTextView
+                        foo:customFont="GE_SS_Two_Medium.otf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="قيد التنفيذ"
+                        android:textSize="10sp"
+                        android:id="@+id/ruen"
+                        android:layout_weight="3"
+                        android:textColor="@color/text_color"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/sign_in_bg"
+                        android:padding="8dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:gravity="center"
+                    android:background="@drawable/sign_in_border"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        >
+
+                        <com.binarycase.mohamed.ontime.utils.CustomTextView
+                            foo:customFont="GE_SS_Two_Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="مشروع تصميم هوية تجارية كاملة"
+                            android:textSize="10sp"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/order_narme2"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/text_red_color"
+                            />
+
+                        <com.binarycase.mohamed.ontime.utils.CustomTextView
+                            foo:customFont="GE_SS_Two_Medium.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20-8-2018"
+                            android:textSize="10sp"
+                            android:layout_marginStart="10dp"
+                            android:layout_below="@+id/order_narme2"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/text_color"
+                            android:id="@+id/order_datee2"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        ></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:src="@drawable/red_bill"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        ></LinearLayout>
+
+
+
+                    <com.binarycase.mohamed.ontime.utils.CustomTextView
+                        foo:customFont="GE_SS_Two_Medium.otf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="قيد التنفيذ"
+                        android:textSize="10sp"
+                        android:id="@+id/ruwn2"
+                        android:layout_weight="3"
+                        android:textColor="@color/text_color"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/sign_in_bg"
+                        android:padding="8dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
